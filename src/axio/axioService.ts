@@ -3,8 +3,6 @@ import cheerio from "cheerio";
 
 
 
-
-
 export class ScrapingService {
   AxiosInstance = axios.create(); 
   public async scraping(url:string, res) {
@@ -31,7 +29,7 @@ export class ScrapingService {
               goals
             })
           })
-            res.send(topScorers)
+          console.log(topScorers)
           // console.log(topScorers);
           //console.log(statsTable);
           //console.log(html);
